@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+   <form action="/action_page.php" method="POST">
+       {% csrf_token %}
+  <label for="name">name:</label><br>
+  <input type="text" id="name" name="name" value="John"><br>
+  <label for="id">id:</label><br>
+  <input type="text" id="id" name="id" value="Doe"><br><br>
+  <input type="text" id="pass" name="pass" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
